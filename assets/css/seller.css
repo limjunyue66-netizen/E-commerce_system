@@ -1,0 +1,35 @@
+body.nb-seller {
+  background:
+    radial-gradient(circle at top right, rgba(245,158,11,.12), transparent 28%),
+    #f7faf8;
+}
+.nb-seller-top {
+  background: #fff;
+  border-bottom: 1px solid rgba(16,35,31,.08);
+  padding: 0.85rem 0;
+  margin-bottom: 1.25rem;
+}
+.nb-seller-nav a {
+  color: #334155;
+  font-weight: 700;
+  margin-right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.nb-seller-nav a.active, .nb-seller-nav a:hover { color: #0f766e; }
+.nb-seller-stat {
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid rgba(16,35,31,.08);
+  padding: 1.1rem;
+  height: 100%;
+}
+.nb-seller-stat i {
+  color: #b45309;
+  background: #fffbeb;
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  display: grid; place-items: center;
+  margin-bottom: 0.55rem;
+}

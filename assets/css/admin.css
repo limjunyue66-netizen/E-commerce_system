@@ -1,0 +1,99 @@
+body.nb-admin {
+  background: #f4f7f6;
+}
+.nb-admin-shell { display: flex; min-height: 100vh; }
+.nb-admin-sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #0b1f1c, #114e48);
+  color: #ecfdf5;
+  padding: 1.25rem 1rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+.nb-admin-sidebar a {
+  color: rgba(236, 253, 245, 0.88);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: 12px;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+.nb-admin-sidebar a:hover,
+.nb-admin-sidebar a.active {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+.nb-admin-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+.nb-admin-content { flex: 1; padding: 1.25rem 1.5rem 2rem; }
+.nb-stat-card {
+  background: #fff;
+  border: 1px solid rgba(16,35,31,.08);
+  border-radius: 18px;
+  padding: 1.15rem;
+  height: 100%;
+  box-shadow: 0 10px 24px rgba(16,35,31,.04);
+}
+.nb-stat-card .icon {
+  width: 44px; height: 44px; border-radius: 12px;
+  display: grid; place-items: center;
+  background: rgba(15,118,110,.12); color: #0f766e;
+  margin-bottom: 0.7rem;
+}
+.nb-stat-card h3 { margin: 0; font-size: 1.55rem; font-weight: 800; }
+.nb-stat-card p { margin: 0; color: #64748b; font-weight: 600; }
+.nb-sales-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.65rem;
+  min-height: 210px;
+}
+.nb-sales-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+}
+.nb-sales-amount {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #0f766e;
+  white-space: nowrap;
+}
+.nb-sales-track {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.nb-chart-bar {
+  width: 70%;
+  max-width: 48px;
+  min-height: 6px;
+  border-radius: 10px 10px 4px 4px;
+  background: linear-gradient(180deg, #0f766e, #14b8a6);
+}
+.nb-sales-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #64748b;
+}
+@media (max-width: 991px) {
+  .nb-admin-shell { flex-direction: column; }
+  .nb-admin-sidebar { width: 100%; height: auto; position: static; }
+}

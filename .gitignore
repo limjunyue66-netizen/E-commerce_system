@@ -1,0 +1,38 @@
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
+auth.json
+
+# Logs
+logs/*.log
+!logs/.gitkeep
+
+# Uploads (keep placeholders / gitkeep only)
+uploads/products/*
+!uploads/products/placeholder-*.svg
+!uploads/products/.gitkeep
+uploads/profiles/*
+!uploads/profiles/.gitkeep
+
+# Runtime / PayPal storage
+storage/paypal/*
+!storage/paypal/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace
+
+# Temporary / local tools output
+tools/debug_*.php
+*.tmp
+*.bak
